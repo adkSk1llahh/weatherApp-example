@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="fonts/fontawesome-free-5.14.0-web/css/all.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloaderrow">
+            <div class="preloaderitem"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="weather-container">
+            <div class="weather-search">
+                <input type="text" class="inputValue"></input>
+                <button type="submit" value="Search" class="button"><i class="fas fa-search"></i></button>
+            </div>
+
+            <div class="weather-display">
+                <p class="desc"></p>
+                <p class="temp"></p>
+            </div>
+
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <div class="default">
+                        <div class="default-london">
+                            <p id="london-location"></p>
+                            <p id="london-weather"></p>
+                            <p id="london-temp"></p>
+                            <img id="london-icon"></img>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="default">
+                        <div class="default-moscow">
+                            <p id="moscow-location"></p>
+                            <p id="moscow-weather"></p>
+                            <p id="moscow-temp"></p>
+                            <img id="moscow-icon"></img>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="default">
+                        <div class="default-paris">
+                            <p id="paris-location"></p>
+                            <p id="paris-weather"></p>
+                            <p id="paris-temp"></p>
+                            <img id="paris-icon"></img>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="default">
+                        <div class="default-newYork">
+                            <p id="newYork-location"></p>
+                            <p id="newYork-weather"></p>
+                            <p id="newYork-temp"></p>
+                            <img id="newYork-icon"></img>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="default">
+                        <div class="default-pekin">
+                            <p id="pekin-location"></p>
+                            <p id="pekin-weather"></p>
+                            <p id="pekin-temp"></p>
+                            <img id="pekin-icon"></img>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+            </div>
+
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+
+</html>

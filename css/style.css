@@ -1,0 +1,468 @@
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu-Regular.eot');
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'),
+    url('../fonts/Ubuntu-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Ubuntu-Regular.woff') format('woff'),
+    url('../fonts/Ubuntu-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu-Light.eot');
+  src: local('Ubuntu Light'), local('Ubuntu-Light'),
+    url('../fonts/Ubuntu-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Ubuntu-Light.woff') format('woff'),
+    url('../fonts/Ubuntu-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu-LightItalic.eot');
+  src: local('Ubuntu Light Italic'), local('Ubuntu-LightItalic'),
+    url('../fonts/Ubuntu-LightItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Ubuntu-LightItalic.woff') format('woff'),
+    url('../fonts/Ubuntu-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu-Medium.eot');
+  src: local('Ubuntu Medium'), local('Ubuntu-Medium'),
+    url('../fonts/Ubuntu-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Ubuntu-Medium.woff') format('woff'),
+    url('../fonts/Ubuntu-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu-Italic.eot');
+  src: local('Ubuntu Italic'), local('Ubuntu-Italic'),
+    url('../fonts/Ubuntu-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Ubuntu-Italic.woff') format('woff'),
+    url('../fonts/Ubuntu-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu-Bold.eot');
+  src: local('Ubuntu Bold'), local('Ubuntu-Bold'),
+    url('../fonts/Ubuntu-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Ubuntu-Bold.woff') format('woff'),
+    url('../fonts/Ubuntu-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu-BoldItalic.eot');
+  src: local('Ubuntu Bold Italic'), local('Ubuntu-BoldItalic'),
+    url('../fonts/Ubuntu-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Ubuntu-BoldItalic.woff') format('woff'),
+    url('../fonts/Ubuntu-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu-MediumItalic.eot');
+  src: local('Ubuntu Medium Italic'), local('Ubuntu-MediumItalic'),
+    url('../fonts/Ubuntu-MediumItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Ubuntu-MediumItalic.woff') format('woff'),
+    url('../fonts/Ubuntu-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+body {
+  color: white;
+  font-weight: 300;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Ubuntu';
+}
+
+body ::-webkit-input-placeholder {
+  font-weight: 300;
+}
+
+body :-moz-placeholder {
+  color: white;
+  opacity: 1;
+  font-weight: 300;
+}
+
+body ::-moz-placeholder {
+  color: white;
+  opacity: 1;
+  font-weight: 300;
+}
+
+body :-ms-input-placeholder {
+  color: white;
+  font-weight: 300;
+}
+
+.wrapper {
+  background: #50a3a2;
+  background: -webkit-gradient(linear, left top, right bottom, from(#50a3a2), to(#53e3a6));
+  background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper.form-success .container h1 {
+  -webkit-transform: translateY(85px);
+  transform: translateY(85px);
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 80px 0;
+  height: 400px;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 40px;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-timing-function: ease-in-put;
+  transition-timing-function: ease-in-put;
+  font-weight: 200;
+}
+
+form {
+  padding: 20px 0;
+  position: relative;
+  z-index: 2;
+  font-family: 'Ubuntu';
+}
+
+.form input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 250px;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  font-weight: 300;
+  cursor: pointer;
+  
+}
+form p{
+  margin: 5px 0;
+}
+
+.form input:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.form #register-button:hover {
+  background: black;
+  color: white;
+}
+
+.form #login-button:hover {
+  background: black;
+  color: white;
+}
+
+.form input:focus {
+  background-color: white;
+  width: 300px;
+  color: #53e3a6;
+}
+.inputValue{
+  font-family: 'Ubuntu';
+  font-style: italic;
+
+}
+
+.form button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  background-color: white;
+  border: 0;
+  padding: 10px 15px;
+  color: black;
+  border-radius: 3px;
+  width: 250px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  font-family: 'Ubuntu';
+  font-weight: bold;
+}
+
+.login-href {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.weather-search {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+
+}
+
+.weather-search input {
+  width: 100%;
+  height: 42px;
+  padding-left: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  font-weight: 500;
+}
+
+.weather-search input:focus {
+  background-color: white;
+  color: #53e3a6;
+  font-weight: 200;
+}
+
+.weather-search button {
+  position: absolute;
+  right: 0px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  background: black;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  color: white;
+  transition: 0.5s;
+}
+
+.weather-search button:hover {
+  background: white;
+  color: black;
+
+}
+
+.weather-display {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 50px;
+}
+
+.desc {
+  margin: 25px 50px 0 0;
+}
+
+.temp {
+  margin: 25px 0;
+}
+
+.default-london {
+  color: white;
+  height: 300px;
+  background-image: url(../img/london.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.default-moscow {
+  color: white;
+  height: 300px;
+  background-image: url(../img/moscow.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.default-paris {
+  color: white;
+  height: 300px;
+  background-image: url(../img/paris.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.default-newYork {
+  color: white;
+  height: 300px;
+  background-image: url(../img/newyork.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.default-pekin {
+  color: white;
+  height: 300px;
+  background-image: url(../img/pekin.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.default p {
+  padding: 30px 0 0 0;
+  margin: 20px 0;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+
+.slideshow-container {
+  position: relative;
+
+}
+
+.mySlides {
+  display: none;
+  text-align: center;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+
+.dot-container {
+  text-align: center;
+  padding: 20px;
+
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #53e3a6;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #e0e0e0;
+  z-index: 1001;
+}
+
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background-color: #337ab7;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-bounce {
+
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
