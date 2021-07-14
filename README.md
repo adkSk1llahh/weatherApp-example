@@ -1,2 +1,2 @@
-html/css + js
+html/css + js |
 openweathermap api and localStorage
